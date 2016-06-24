@@ -16,7 +16,6 @@
 	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
 	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
-	<!-- <link href="stylesheets/bootstrap.css" media="all" rel="stylesheet" type="text/css" /> -->
 
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/form.storage.js"></script>
@@ -24,8 +23,6 @@
 	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
 </head>
 <body>
 
@@ -33,43 +30,25 @@
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
 
+<!-- DELETE FROM HERE -->
 
- <div class="column-two-thirds">
+<h1 class="heading-xlarge">Change button from radio selection</h1>
 
-
-
-	 <!-- START PAGE -->
-	 <br>
-	 <p><a href="q3.html" class="link-back">< Back</a> Section 2: Complaint details</p>
-
-	 <h1 class="heading-medium">Where did the problem occur?</h1>
-
-<!--GWF reference  -->
-<div>
-<label class="form-label" for="country-ref">
-	Country
+<div class="form-group">
+<label class="block-label" for="onward-1">
+  <input id="onward-1" name="onwardPage" value="summary" type="radio" data-button-page="summary.html" data-button-id="#continuebutton" checked="checked">
+  Summary
 </label>
-  <input class="form-control" id="country-ref" name="country-ref" type="text">
-  <!-- <label class="form-checkbox" for="checkbox-country-ref">
-    <input id="checkbox-country-ref" name="country-ref" type="checkbox" value="true">
-    I do not know this -->
-	</label>
+
+<label class="block-label" for="onward-2">
+  <input id="onward-2" name="onwardPage" value="start" type="radio" data-button-page="index.html" data-button-id="#continuebutton">
+  Back to start
+</label>
 </div>
-<br>
 
-<br>
-<a href="q3.html"><input class="button" type="submit" value="Save and continue"></a>
+<a href="summary.html" class="button" id="continuebutton">Continue</a>
 
-</div> <!-- column-two-thirds -->
-
-
-
-
-
-
-
-
-		 <!-- STOP DELETING! -->
+<!-- STOP DELETING! -->
 
 
 	</main>

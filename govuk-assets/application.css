@@ -563,8 +563,8 @@ fieldset {
 
 .form-label-bold {
   font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  /*line-height: 1.25;*/
+  font-size: 24px;
+  line-height: 1.25;
   font-weight: 700;
   text-transform: none;
   margin-bottom: 0; }
@@ -990,7 +990,7 @@ ul, ol {
     letter-spacing: 1px;
     text-decoration: none;
     color: #fff;
-    background-color: #F47738; }
+    background-color: #d53880; }
     @media (min-width: 641px) {
       .alpha-banner .phase-tag {
         vertical-align: baseline; } }

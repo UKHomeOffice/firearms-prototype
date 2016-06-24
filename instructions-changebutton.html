@@ -16,7 +16,6 @@
 	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
 	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
-	<!-- <link href="stylesheets/bootstrap.css" media="all" rel="stylesheet" type="text/css" /> -->
 
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/form.storage.js"></script>
@@ -24,8 +23,6 @@
 	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
 </head>
 <body>
 
@@ -33,39 +30,39 @@
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
 
+<!-- DELETE FROM HERE -->
 
- <div class="column-two-thirds">
-
-
-
-	 <!-- START PAGE -->
-	 <br>
-	 <p><a href="q3.html" class="link-back">< Back</a> Section 2: Complaint details</p>
-
-	 <h1 class="heading-medium">Provide details of the complaint</h1>
-<!--FULL NAME  -->
+<h1 class="heading-xlarge">Change button from radio selection</h1>
+<div class="instructions">
+	<p>If you want to send the user to a different place based on a radio button you can do so by using 2 data attributes, "data-button-page" and "data-button-id" to say which page should be redirected to and which button should send the user there respectively. </p>
+	<p>For example, to redirect a user to "summary.html" when they select a checkbox with a label of "Summary" you can use the following:
+	<pre>
+&lt;label class="block-label" for="onward-1">
+  &lt;input id="onward-1" name="onwardPage" value="summary" type="radio" data-button-page="summary.html" data-button-id="#continuebutton" checked="checked">
+  Summary
+&lt;/label>
+</pre>
+<p>This looks for, when changed, a button with the ID "continuebutton" and changes it's href (where it goes when clicked) to "summary.html".</p>
+<pre>
+&lt;a href="default.html" class="button" id="continuebutton">Continue&lt;/a>
+</pre>
+<p>If the radio button hadn't been changed, it'd still go to default.html instead.</p>
+</div>
 <div class="form-group">
-	<label class="form-label" for="complaint-details">Provide details of the complaint</label>
-	    <span class="form-hint">Be concise but include all important details. If you are complaining about the quality of
-			information provided, tell us where the information is - and include a link if it is on a website.</span>
-	    <textarea name="Text333a" cols="340" rows="5" style="width:600px; height:150px;" id="Text333a"></textarea>
+<label class="block-label" for="onward-1">
+  <input id="onward-1" name="onwardPage" value="summary" type="radio" data-button-page="instructions-summary.html" data-button-id="#continuebutton" checked="checked">
+  Summary
+</label>
 
-
+<label class="block-label" for="onward-2">
+  <input id="onward-2" name="onwardPage" value="start" type="radio" data-button-page="index.html" data-button-id="#continuebutton">
+  Back to start
+</label>
 </div>
 
-<br>
-<a href="summary.html"><input class="button" type="submit" value="Save and continue"></a>
+<a href="instructions-summary.html" class="button" id="continuebutton">Continue</a>
 
-</div> <!-- column-two-thirds -->
-
-
-
-
-
-
-
-
-		 <!-- STOP DELETING! -->
+<!-- STOP DELETING! -->
 
 
 	</main>

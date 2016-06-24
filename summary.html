@@ -16,7 +16,6 @@
 	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
 	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
-	<!-- <link href="stylesheets/bootstrap.css" media="all" rel="stylesheet" type="text/css" /> -->
 
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/form.storage.js"></script>
@@ -24,8 +23,6 @@
 	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
 </head>
 <body>
 
@@ -33,74 +30,60 @@
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
 
+<!-- DELETE FROM HERE -->
 
- <div class="column-two-thirds">
+<h1 class="heading-xlarge">Summary</h1>
 
-
-
-	 <!-- START PAGE -->
-
-<h1 class="heading-medium">Check your answers before sending your complaint.</h1>
-
-<table>
+<table class="playback-container" name="test-form">
     <thead>
       <tr>
-        <!-- <th colspan="2">Dates and amounts</th> -->
+        <th scope="col" width="60%">
+          <span data-lang="eng">Your details</span>
+        </th>
+        <th scope="col" width="40%" class="numeric"><a href="examples-form.html"><span data-lang="eng">Edit</span><span data-lang="arabic" style="display: none;">تغيير</span></a></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="bold">I am the</td>
-        <td></td>
-      </tr>
-			<tr>
-        <td>applicant</td>
-        <td><a href="q1.html">Edit</a></td>
+       <td>
+         <span data-lang="eng">Name</span>
+        </td>
+       <td>
+         <span class="playback-cell" data-playback="full-name"></span>
+        </td>
       </tr>
       <tr>
-        <td class="bold">Personal details</td>
-        <td></td>
+       <td>
+         <span data-lang="eng">DOB</span>
+        </td>
+       <td><span class="playback-cell" data-playback="dob-day"></span> <span class="playback-cell" data-playback="dob-month"></span> <span class="playback-cell" data-playback="dob-year"></span> </td>
       </tr>
-			<tr>
-				<td>Name: Joe Smith <br> Date of birth: 03 March 1980 <br> Email address: jsmith@gmail.com <br>Telephone number: 077 980 12345</td>
-				<td><a href="q2.html">Edit</a></td>
-			</tr>
+      <!--<tr>
+       <td>
+         <span data-lang="eng">Which airport will you leave the UK from?</span>
+         <span data-lang="arabic">من اى مطار سوف تغادر المملكة المتحدة ؟</span>
+       </td>
+       <td><span class="playback-cell" data-playback="DepartureAirport"></span></td>
+     </tr>-->
+     <tr>
+      <td>
+        <span data-lang="eng">NI number</span>
+       </td>
+      <td><span class="playback-cell" data-playback="ni-number"></span></td>
+     </tr>
 
-			<tr>
-        <td class="bold">What is your complaint?</td>
-        <td></td>
-      </tr>
-			<tr>
-        <td>Quality of service</td>
-        <td><a href="q3.html">Edit</a></td>
-      </tr>
-			<tr>
-        <td class="bold">Provide details of your complaint</td>
-        <td></td>
-      </tr>
-			<tr>
-				<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin convallis enim, molestie hendrerit lectus viverra quis. Aenean faucibus nibh ac nunc rutrum, cursus pulvinar eros imperdiet. In ultrices magna viverra tortor finibus malesuada. Vestibulum vel vehicula dui, sed gravida sem. Ut tempus urna eu tortor accumsan pellentesque. Donec lobortis libero ex, in euismod mauris porttitor semper. Nullam a sollicitudin nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean egestas massa vel tellus rutrum interdum eget vitae lectus. Integer vulputate eu velit sit amet lobortis. Proin nisl ante, lobortis a lectus sed, vestibulum hendrerit leo. Nunc pretium diam nec purus tincidunt sodales. Vivamus eget dignissim nunc. Nam aliquet erat felis, a congue arcu dignissim at. Duis id massa sed nisi vestibulum facilisis sed in nunc.
+   </tbody>
+   </table>
+<p>
+	<a href="index.html" class="button">Back to the start</a>
+</p>
+<hr>
+<p>Press the button below to clear this session's information before you start again</p>
+<p>
+	<a href="#" class="button clearStorage">Clear saved data</a>
+</p>
 
-
-				</td>
-				<td><a href="q4.html">Edit</a></td>
-			</tr>
-    </tbody>
-  </table>
-
-<br>
-<a href="confirmation.html"><input class="button" type="submit" value="Send my complaint"></a>
-
-</div> <!-- column-two-thirds -->
-
-
-
-
-
-
-
-
-		 <!-- STOP DELETING! -->
+<!-- STOP DELETING! -->
 
 
 	</main>

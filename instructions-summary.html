@@ -16,7 +16,6 @@
 	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
 	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
-	<!-- <link href="stylesheets/bootstrap.css" media="all" rel="stylesheet" type="text/css" /> -->
 
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/form.storage.js"></script>
@@ -24,8 +23,6 @@
 	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
 </head>
 <body>
 
@@ -33,44 +30,63 @@
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
 
+<!-- DELETE FROM HERE -->
 
- <div class="column-two-thirds">
-
-
-
-	 <!-- START PAGE -->
-	<br>
-	 <p><a href="third-party.html" class="link-back">< Back</a> Section 1: Who are you</p></p>
-
-	 <h1 class="heading-medium">What is the applicant's personal details?</h1>
-<!--FULL NAME  -->
-<div class="form-group">
-	 <label class="form-label" for="full-name-f1">Full name</label>
-		<input class="form-control" id="full-name-f1" type="text">
+<h1 class="heading-xlarge">Summary</h1>
+<div class="instructions">
+	<p>You can replay information entered in earlier pages using a couple of specific class names and data attributes.</p>
+	<p>-- INCOMPLETE --</p>
 </div>
-<!--DOB  -->
-<div class="form-group">
-	<label class="form-label" for="dob">
-    Date of birth
-    <span class="form-hint">For example, 31 3 1980</span>
-  </label>
-  <input class="form-control" id="dob" type="text">
-	</div>
+<table class="playback-container" name="test-form">
+    <thead>
+      <tr>
+        <th scope="col" width="60%">
+          <span data-lang="eng">Your details</span>
+        </th>
+        <th scope="col" width="40%" class="numeric"><a href="examples-form.html"><span data-lang="eng">Edit</span><span data-lang="arabic" style="display: none;">تغيير</span></a></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <td>
+         <span data-lang="eng">Name</span>
+        </td>
+       <td>
+         <span class="playback-cell" data-playback="full-name"></span>
+        </td>
+      </tr>
+      <tr>
+       <td>
+         <span data-lang="eng">DOB</span>
+        </td>
+       <td><span class="playback-cell" data-playback="dob-day"></span> <span class="playback-cell" data-playback="dob-month"></span> <span class="playback-cell" data-playback="dob-year"></span> </td>
+      </tr>
+      <!--<tr>
+       <td>
+         <span data-lang="eng">Which airport will you leave the UK from?</span>
+         <span data-lang="arabic">من اى مطار سوف تغادر المملكة المتحدة ؟</span>
+       </td>
+       <td><span class="playback-cell" data-playback="DepartureAirport"></span></td>
+     </tr>-->
+     <tr>
+      <td>
+        <span data-lang="eng">NI number</span>
+       </td>
+      <td><span class="playback-cell" data-playback="ni-number"></span></td>
+     </tr>
 
+   </tbody>
+   </table>
+<p>
+	<a href="index.html" class="button">Back to the start</a>
+</p>
+<hr>
+<p>Press the button below to clear this session's information before you start again</p>
+<p>
+	<a href="#" class="button clearStorage">Clear saved data</a>
+</p>
 
-<br>
-<a href="q3.html"><input class="button" type="submit" value="Save and continue"></a>
-
-</div> <!-- column-two-thirds -->
-
-
-
-
-
-
-
-
-		 <!-- STOP DELETING! -->
+<!-- STOP DELETING! -->
 
 
 	</main>
