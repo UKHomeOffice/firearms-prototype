@@ -36,20 +36,43 @@
 	<br>
 		<a href="company-address.html">Back</a>
 	<p>Section 1 of 4: Company details</p>
-	<h1 class="heading-medium">What is the nature of the company's business?</h1>
+	<h1 class="heading-medium">Do other businesses operate at the same address?</h1>
 
 	<!-- Business -->
-	<div class="form-group">
+	<!-- <div class="form-group">
 		<label class="form-label" for="full-name">Nature of the business</label>
 		<input type="text" class="form-control" id="full-name" name="full-name" />
-	</div>
+	</div> -->
 
 	<!--Other business  -->
 
 	<div class="form-group">
-		<label class="form-label" for="full-name">Nature of other business conducted at this address</label>
-		<input type="text" class="form-control" id="full-name" name="full-name" />
+		 <label class="block-label selectable" for="radio-1">
+			 <input class="selectable" id="radio-1" type="radio" name="radio-order-how" value="online" data-storage="Car">
+				Yes
+			</label>
+			<div class="connected optional-section optional-section-radio-order-how" data-toggle-value="online" style="display: none;">
+				<div class="form-group">
+					<br>
+					<label class="form-label" for="col-number">What is the nature of that business or businesses?
+					</label>
+					<input type="text" class="form-control" id="account-number" name="account-number" data-storage="online">
+				</div>
+
+
+			<div class="form-group">
+				<a href="#">Add more businesses (nonfunctional at the moment)</a>
+				</div>
+			</div>
+			<label class="block-label selectable" for="radio-2">
+				<input id="radio-2" type="radio" name="radio-order-how" value="unicycle" data-storage="Unicycle">
+				No
+			</label>
+			<div class="connected optional-section optional-section-radio-order-how" data-toggle-value="unicycle" style="display: none;">
+
+			</div>
 	</div>
+
 
 
 
