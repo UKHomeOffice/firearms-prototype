@@ -16,3 +16,36 @@ pre {
 	overflow: scroll;
 }
 *[class^='optional-section-'],*[class*=' optional-section-'] {display: none;}
+
+.bold {
+	font-weight: bold;
+}
+
+.indent {
+	padding-left:10px;
+}
+
+.grey_button {
+  display: inline;
+  padding: 2px 8px;
+  color: #000;
+  background: #bfc1c3;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.grey_button:hover {
+  background: #dee0e2;
+}
+
+p.nofilechosen {
+  display: inline;
+  margin-left: 10px;
+}

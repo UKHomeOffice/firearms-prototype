@@ -35,66 +35,47 @@
 <form name="test-form" class="form">
 	<br>
 	<p>Section 1 of 4: Company details</p>
-	<h1 class="heading-medium">What are the company's details?</h1>
+	<h1 class="heading-medium">What type of company?</h1>
 
-	<!-- Full name of company-->
-	<!-- <div class="form-group">
-		<label class="form-label" for="full-name">Full name of company</label>
-		<input type="text" class="form-control" id="full-name" name="full-name" />
-	</div> -->
+	<form>
+		<fieldset>
 
-	<!--Registered name of company  -->
+			<legend class="visuallyhidden">Where did this take place?</legend>
 
-	<div class="form-group">
-		<label class="form-label" for="full-name">Registered name of company</label>
-		<input type="text" class="form-control" id="full-name" name="full-name" />
-	</div>
-
-	<!--Companies House Registration Number  -->
-
-	<div class="form-group">
-		<label class="form-label" for="full-name">Companies House registration number</label>
-		<input type="text" class="form-control" id="full-name" name="full-name" />
-	</div>
-
-	<!--Previous trading names  -->
-
-	<!--
-	<div class="form-group">
-		<label class="form-label" for="full-name">Previous trading names</label>
-		<input type="text" class="form-control" id="full-name" name="full-name" />
-	</div>-->
-
-	<p>Has the company ever traded under a different name?</p>
-
-	<div class="form-group">
-		 <label class="block-label selectable" for="radio-1">
-			 <input class="selectable" id="radio-1" type="radio" name="radio-order-how" value="online" data-storage="Car">
-				Yes
+			<label class="block-label" for="radio-1">
+				<input id="radio-1" type="radio" name="radio-group" value="sb-phone">
+				Limited
 			</label>
-			<div class="connected optional-section optional-section-radio-order-how" data-toggle-value="online" style="display: none;">
-				<div class="form-group">
-					<br>
-					<label class="form-label" for="col-number">List all the names the company has previously traded under
-					</label>
-						<input type="text" class="form-control" id="account-number" name="account-number" data-storage="online">
-				</div>
-				<div class="form-group">
-				<a href="#">Add more names (nonfunctional at the moment)</a>
-				</div>
 
-
-			<div class="form-group">
-				</div>
-			</div>
-			<label class="block-label selectable" for="radio-2">
-				<input id="radio-2" type="radio" name="radio-order-how" value="unicycle" data-storage="Unicycle">
-				No
+			<label class="block-label" for="radio-2">
+				<input id="radio-2" type="radio" name="radio-group" data-target="vac-yes" value="sb-vac">
+				Public limited
 			</label>
-			<div class="connected optional-section optional-section-radio-order-how" data-toggle-value="unicycle" style="display: none;">
 
-			</div>
+			<label class="block-label" for="radio-3">
+				<input id="radio-3" type="radio" name="radio-group" data-target="sc-yes" value="sb-sc">
+				Partnership
+			</label>
+
+			<label class="block-label" for="radio-4">
+				<input id="radio-4" type="radio" name="radio-group" value="sb-letter-email">
+				Sole trader
+			</label>
+
+		</fieldset>
+	</form>
+
+
+
+<br>
+<br>
+	<!--name of company  -->
+
+	<div class="form-group">
+		<label class="form-label" for="full-name">Company name</label>
+		<input type="text" class="form-control" id="full-name0" name="full-name0" />
 	</div>
+
 
 
 
