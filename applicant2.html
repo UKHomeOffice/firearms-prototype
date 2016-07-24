@@ -30,45 +30,61 @@
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
 
-		<!--LAYOUT  -->
-		<div class="column-two-thirds">
 
-<!-- DELETE FROM HERE -->
-<form name="test-form" class="form">
-	<br>
-	<a href="why.html">< Back</a>
+			<!-- DELETE FROM HERE -->
+			<form name="test-form" class="form">
+				<br>
+				<a href="applicant-home-select.html">< Back</a>
 
 
 
-	<!--Weapons-->
+				<!--Firearms certificate -->
 
-<h1 class="heading-medium">Request for an S5 authority</h1>
+				<h1 class="heading-medium">Individual(s) to be named on authority</h1>
 
-<div class="form-group">
-	<label class="form-label" for="full-name">Explain why you need this authority in greater detail
-<span class="form-hint">Include executive summary, background, business objectives and evidence of prospective trade</span>
-	</label>
-	<textarea name="Text1" cols="40" rows="5" style="width:600px; height:150px;" id="Text1"></textarea>
-</div>
-<div>
-	 <a href="#" class="grey_button">Add supporting documents</a><p class="nofilechosen">No file chosen</p>
-</div>
+			<form>
+				<fieldset>
 
-<br>
-<br>
+			<label class="form-label" for="full-name-f1"><p>Is there a second individual to be named on the authority?</p>
+</label>
+					<label class="block-label" for="radio-1">
+						<input id="radio-1" type="radio" name="radio-group" value="yes">
+						Yes
+					</label>
+					<label class="block-label" for="radio-2">
+						<input id="radio-2" type="radio" name="radio-group" value="no">
+						No
+					</label>
 
-	<div class="form-group">
-		<a class="button" href="company-address.html">Save and continue</a>
+				</fieldset>
+			</form>
 
-	</div>
-</form>
+			<br>
+			<a href="#"><input class="button" type="submit" value="Save and continue"></a>
 
-<!-- CLOSING LAYOUT DIV -->
-</div>
-<!-- STOP DELETING! -->
+			</div>
+			<!--  -->
 
+		<!-- STOP DELETING! -->
 
 	</main>
 	<footer data-includefile="footer"></footer>
+	<script type="text/javascript">
+		$(function () {
+			$('a').click(function (e) {
+				var value = $('input[name=radio-group]:checked').val();
+				// var value = $('input#input-text-id').val();
+				switch(value) {
+					case 'yes':
+						this.href = 'applicant2-name.html';
+						break;
+					default:
+						this.href = 'contact.html';
+						break;
+				}
+				return true;
+			});
+		});
+	</script>
 </body>
 </html>

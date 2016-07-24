@@ -36,29 +36,59 @@
 <!-- DELETE FROM HERE -->
 <form name="test-form" class="form">
 	<br>
-	<a href="why.html">< Back</a>
+	<a href="business-need-weapons.html">< Back</a>
 
 
 
 	<!--Weapons-->
 
-<h1 class="heading-medium">Request for an S5 authority</h1>
+<h1 class="heading-medium">Firearm categories and quantities</h1>
+<p>Select all the ammunition types that will be handled under the S5 authority</p>
 
-<div class="form-group">
-	<label class="form-label" for="full-name">Explain why you need this authority in greater detail
-<span class="form-hint">Include executive summary, background, business objectives and evidence of prospective trade</span>
-	</label>
-	<textarea name="Text1" cols="40" rows="5" style="width:600px; height:150px;" id="Text1"></textarea>
-</div>
-<div>
-	 <a href="#" class="grey_button">Add supporting documents</a><p class="nofilechosen">No file chosen</p>
-</div>
+<form>
+  <fieldset>
+    <label class="block-label" for="weapon-1">
+      <input id="weapon-1" name="waste-types" type="checkbox" value="waste-animal">
+      Cartridges designed to explode; noxious ammunition; grenades/bombs/rockets fired from firearms
+    </label>
+    <label class="block-label" for="weapon-3">
+      <input id="weapon-3" name="waste-types" type="checkbox" value="waste-farm-agricultural">
+      Ammunition for military use which has an incendiary missile
+    </label>
+		<label class="block-label" for="weapon-4">
+      <input id="weapon-4" name="waste-types" type="checkbox" value="waste-animal4">
+      Ammunition for military use which has an armour-piercing missile
+    </label>
+		<label class="block-label" for="weapon-5">
+			<input id="weapon-5" name="waste-types" type="checkbox" value="waste-farm-agricultural">
+			Ammunition which has an expanding missile
+		</label>
+    <label class="block-label" for="weapon-6">
+      <input id="weapon-6" name="waste-types" type="checkbox" value="waste-mine5">
+      Actual missiles (projectiles) for all the above ammunition
+    </label>
+
+
+  </fieldset>
+</form>
 
 <br>
-<br>
+<details>
+	<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="false"><span class="summary">Help with ammunition categories</span></summary>
+	<div class="panel-indent" id="details-content-0" aria-hidden="true" style="display: none;">
+		<p>
+			lorem ipsum
+		</p>
 
+	</div>
+</details>
+
+
+
+
+<br>
 	<div class="form-group">
-		<a class="button" href="company-address.html">Save and continue</a>
+		<a class="button" href="applicant.html">Save and continue</a>
 
 	</div>
 </form>
