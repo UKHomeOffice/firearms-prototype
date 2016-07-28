@@ -33,94 +33,242 @@
 		<!--LAYOUT  -->
 		<div class="column-two-thirds">
 
-<!-- DELETE FROM HERE -->
-<form name="test-form" class="form">
-	<br>
-	<a href="business-need-weapons.html">< Back</a>
+			<!-- DELETE FROM HERE -->
+			<form name="test-form" class="form">
+				<br>
+				<a href="business-need-weapons.html">< Back</a>
 
 
 
-	<!--Weapons-->
+				<!--Weapons-->
 
-<h1 class="heading-medium">Firearm categories and quantities</h1>
-<p>Select all the weapon types that will be handled under the S5 authority</p>
+				<h1 class="heading-medium">Firearm categories and quantities</h1>
+				<p>Select all the weapon categories that will be handled under the S5 authority</p>
 
-<form>
-  <fieldset>
-    <label class="block-label" for="weapon-1">
-      <input id="weapon-1" name="waste-types" type="checkbox" value="waste-animal">
-      Fully automatic/burst-fire weapons
-    </label>
+				<!--new  -->
+				<form name="test-form">
+					<div class="form-group">
+						<!--1  -->
+						<label class="block-label selectable" for="radio-1">
+							<input class="selectable" id="radio-1" type="checkbox" name="travel-how" value="one">
+							Fully automatic/burst-fire weapons
+						</label>
+						<div class="optional-section-travel-how form-group" data-toggle-value="one">
+							<label class="form-label" for="vac-city">
+								Quantity
+							</label>
+							<input class="form-control" id="vac-city" type="text">
+							<br><br>
+							<details>
+								<summary><span class="summary">Help with section 5(1)(a)</span></summary>
+								<div class="panel panel-border-narrow">
+									<p>covers all weapons which are so designed or adapted that two or more misiles can be successively discharged without repeated pressure on the trigger.</p>
+								</div>
+							</details>
+						</div>
 
-			<!--  -->
-    <label class="block-label" for="weapon-2">
-      <input id="weapon-2" name="waste-types" type="checkbox" value="waste-mines">
-      Self-loading/pump-action rifles and carbines but not pistols
-    </label>
-    <label class="block-label" for="weapon-3">
-      <input id="weapon-3" name="waste-types" type="checkbox" value="waste-farm-agricultural">
-      Short firearms pistols and revolvers
-    </label>
-		<label class="block-label" for="weapon-4">
-      <input id="weapon-4" name="waste-types" type="checkbox" value="waste-animal4">
-      Short self-loading/pump-action shotguns
-    </label>
-		<label class="block-label" for="weapon-5">
-			<input id="weapon-5" name="waste-types" type="checkbox" value="waste-farm-agricultural">
-			Large smooth-bore revolvers
-		</label>
-    <label class="block-label" for="weapon-6">
-      <input id="weapon-6" name="waste-types" type="checkbox" value="waste-mine5">
-      Rocket launchers and mortars
-    </label>
-    <label class="block-label" for="weapon-7">
-      <input id="weapon-7" name="waste-types" type="checkbox" value="waste-farm-agricultura6">
-      Air rifle/gun/pistol for use with self-containged gas cartridge
-    </label>
-		<label class="block-label" for="weapon-8">
-			<input id="weapon-8" name="waste-types" type="checkbox" value="waste-mines">
-			Weapons whire fire noxious substances
-		</label>
-		<label class="block-label" for="weapon-9">
-			<input id="weapon-9" name="waste-types" type="checkbox" value="waste-animal4">
-			Firearms disguised as other objects
-		</label>
-		<label class="block-label" for="weapon-10">
-			<input id="waste-type-10" name="waste-types" type="checkbox" value="waste-mine5">
-			Rockets/ammunition with exploding missiles for military use
-		</label>
-		<label class="block-label" for="weapon-11">
-			<input id="weapon-11" name="waste-types" type="checkbox" value="waste-farm-agricultura6">
-			Launchers/projecting apparatus for use with rockets/ammunition (above)
-		</label>
+						<!--2  -->
+						<label class="block-label selectable" for="radio-2">
+							<input id="radio-2" type="checkbox" name="travel-how" value="two">
+							Self-loading/pump-action rifles and carbines but not pistols
+						</label>
+						<div class="optional-section-travel-how form-group" data-toggle-value="two">
 
-  </fieldset>
-</form>
+							<label class="form-label" for="vac-city2">
+								Quantity
+							</label>
+							<input class="form-control" id="vac-city2" type="text">
+							<br><br>
+							<details>
+								<summary><span class="summary">Help with section 5(1)(ab)</span></summary>
+								<div class="panel panel-border-narrow">
+									<p>covers any self-loading or pump-action rifled gun other than one which is chambered for a .22 rimfire cartridges.</p>
+								</div>
+							</details>
+						</div>
+						<!--3  -->
+						<label class="block-label selectable" for="radio-3">
+							<input id="radio-3" type="checkbox" name="travel-how" value="three">
+							Short firearms pistols and revolvers
+						</label>
+						<div class="optional-section-travel-how form-group" data-toggle-value="three">
+							<label class="form-label" for="vac-city3">
+								Quantity
+							</label>
+							<input class="form-control" id="vac-city3" type="text">
+							<br><br>
+							<details>
+								<summary><span class="summary">Help with section 5(1)(aba)</span></summary>
+								<div class="panel panel-border-narrow">
+									<p>covers any firearm which either has a barrel less than 30cm in length or is less than 60cm in length overall, other than an air weapon, a muzzle-loading gun or a firearm designed as a signalling apparatus.</p>
+								</div>
+							</details>
+						</div>
+						<!--4  -->
+						<label class="block-label selectable" for="radio-4">
+							<input class="selectable" id="radio-4" type="checkbox" name="travel-how" value="four">
+							Short self-loading/pump-action shotguns
+						</label>
+						<div class="optional-section-travel-how form-group" data-toggle-value="four">
+							<label class="form-label" for="vac-city">
+								Quantity
+							</label>
+							<input class="form-control" id="vac-city" type="text">
+							<br><br>
+							<details>
+								<summary><span class="summary">Help with section 5(1)(ac)</span></summary>
+								<div class="panel panel-border-narrow">
+									<p>covers any self-loading or pump-action smooth-bore gun which is not an air weapon or chambered for .22 rimfire cartridges and either has a barrel less than 24 inches in length or is less than 40 inches in length overall.</p>
+								</div>
+							</details>
+						</div>
+						<!--5  -->
+						<label class="block-label selectable" for="radio-5">
+							<input id="radio-5" type="checkbox" name="travel-how" value="five">
+							Large smooth-bore revolvers
+						</label>
+						<div class="optional-section-travel-how form-group" data-toggle-value="five">
 
-<br>
-<details>
-	<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="false"><span class="summary">Help with weapon categories</span></summary>
-	<div class="panel-indent" id="details-content-0" aria-hidden="true" style="display: none;">
-		<p>
-			lorem ipsum
-		</p>
+							<label class="form-label" for="vac-city2">
+								Quantity
+							</label>
+							<input class="form-control" id="vac-city2" type="text">
+							<br><br>
+							<details>
+								<summary><span class="summary">Help with section 5(1)(ad)</span></summary>
+								<div class="panel panel-border-narrow">
+									<p>covers any smooth-bore revolver gun other than one which is chambered for 9mm rimfire cartridges or a muzzle-loading gun.</p>
+								</div>
+							</details>
+						</div>
+						<!--6 -->
+						<label class="block-label selectable" for="radio-6">
+							<input id="radio-6" type="checkbox" name="travel-how" value="six">
+							Rocket launchers and mortars
+						</label>
+						<div class="optional-section-travel-how form-group" data-toggle-value="six">
+							<label class="form-label" for="vac-city3">
+								Quantity
+							</label>
+							<input class="form-control" id="vac-city3" type="text">
+							<br><br>
+							<details>
+								<summary><span class="summary">Help with section 5(1)(ae)</span></summary>
+								<div class="panel panel-border-narrow">
+									<p>covers any rocket launcher, or any mortar, for projecting a stabilised missile, other than a launcher or mortar designed for line-throwing or pyrotechnic purposes or as a signalling apparatus.</p>
+								</div>
+							</details>
+						</div>
+						<!--7 -->
+						<label class="block-label selectable" for="radio-7">
+							<input id="radio-7" type="checkbox" name="travel-how" value="seven">
+							Air rifle/gun/pistol for use with self-contained gas cartridge
+						</label>
+						<div class="optional-section-travel-how form-group" data-toggle-value="seven">
+							<label class="form-label" for="vac-city3">
+								Quantity
+							</label>
+							<input class="form-control" id="vac-city3" type="text">
+							<br><br>
+							<details>
+								<summary><span class="summary">Help with section 5(1)(af) </span></summary>
+								<div class="panel panel-border-narrow">
+									<p>covers any air rifle, air gun or air pistol which uses, or is designed or adapted for use with a self-contained gas cartridge system.</p>
+								</div>
+							</details>
+						</div>
+						<!--8-->
+						<label class="block-label selectable" for="radio-8">
+							<input id="radio-8" type="checkbox" name="travel-how" value="eight">
+							Weapons which fire noxious substances
+						</label>
+						<div class="optional-section-travel-how form-group" data-toggle-value="eight">
+							<label class="form-label" for="vac-city3">
+								Quantity
+							</label>
+							<input class="form-control" id="vac-city3" type="text">
+							<br><br>
+							<details>
+								<summary><span class="summary">Help with section 5(1)(b)</span></summary>
+								<div class="panel panel-border-narrow">
+									<p>covers any weapon of whatever description designed or adapted for the discharge of any noxious liquid, gas or other thing.</p>
+								</div>
+							</details>
+						</div>
+						<!--9 -->
+						<label class="block-label selectable" for="radio-9">
+							<input id="radio-9" type="checkbox" name="travel-how" value="nine">
+							Firearms disguised as other objects
+						</label>
+						<div class="optional-section-travel-how form-group" data-toggle-value="nine">
+							<label class="form-label" for="vac-city3">
+								Quantity
+							</label>
+							<input class="form-control" id="vac-city3" type="text">
+							<br><br>
+							<details>
+								<summary><span class="summary">Help with section 5(1A)(a)</span></summary>
+								<div class="panel panel-border-narrow">
+									<p>covers any firearm which is disguised as another object.</p>
+								</div>
+							</details>
+						</div>
+						<!--10 -->
+						<label class="block-label selectable" for="radio-10">
+							<input id="radio-10" type="checkbox" name="travel-how" value="ten">
+							Rockets/ammunition with exploding missiles for military use
+						</label>
+						<div class="optional-section-travel-how form-group" data-toggle-value="ten">
+							<label class="form-label" for="vac-city3">
+								Quantity
+							</label>
+							<input class="form-control" id="vac-city3" type="text">
+							<br><br>
+							<details>
+								<summary><span class="summary">Help with section 5(1A)(b)</span></summary>
+								<div class="panel panel-border-narrow">
+									<p>covers any rocket or ammunition not falling within section 5(1)(c) which consists in or incorporates a missile designed to explode on or immediately before impact and is for military use.</p>
+								</div>
+							</details>
+						</div>
+						<!--11 -->
+						<label class="block-label selectable" for="radio-11">
+							<input id="radio-11" type="checkbox" name="travel-how" value="eleven">
+							Launchers/projecting apparatus for use with rockets/ammunition (above)
+						</label>
+						<div class="optional-section-travel-how form-group" data-toggle-value="eleven">
+							<label class="form-label" for="vac-city3">
+								Quantity
+							</label>
+							<input class="form-control" id="vac-city3" type="text">
+							<br><br>
+							<details>
+								<summary><span class="summary">Help with section 5(1A)(c)</span></summary>
+								<div class="panel panel-border-narrow">
+									<p>covers any launcher or other projecting apparatus not falling within section 5(1)(ae) which is designed to be used with any rocket or ammunition falling within section 5(1A)(b), or with ammunitions which would fall within that paragraph but for its being ammunition falling within section 5(1)(c).</p>
+								</div>
+							</details>
+						</div>
+					</div>
+				</form>
+				<!-- end new -->
 
-	</div>
-</details>
 
-<br>
+				<br>
+
+				<br>
 
 
 
-	<div class="form-group">
-		<a class="button" href="ammunition.html">Save and continue</a>
+				<div class="form-group">
+					<a class="button" href="ammunition.html">Save and continue</a>
 
-	</div>
-</form>
+				</div>
+			</form>
 
-<!-- CLOSING LAYOUT DIV -->
-</div>
-<!-- STOP DELETING! -->
+			<!-- CLOSING LAYOUT DIV -->
+		</div>
+		<!-- STOP DELETING! -->
 
 
 	</main>

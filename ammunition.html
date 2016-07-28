@@ -47,45 +47,105 @@
 
 <form>
   <fieldset>
-    <label class="block-label" for="weapon-1">
-      <input id="weapon-1" name="waste-types" type="checkbox" value="waste-animal">
-      Cartridges designed to explode; noxious ammunition; grenades/bombs/rockets fired from firearms
-    </label>
-    <label class="block-label" for="weapon-3">
-      <input id="weapon-3" name="waste-types" type="checkbox" value="waste-farm-agricultural">
-      Ammunition for military use which has an incendiary missile
-    </label>
-		<label class="block-label" for="weapon-4">
-      <input id="weapon-4" name="waste-types" type="checkbox" value="waste-animal4">
-      Ammunition for military use which has an armour-piercing missile
-    </label>
-		<label class="block-label" for="weapon-5">
-			<input id="weapon-5" name="waste-types" type="checkbox" value="waste-farm-agricultural">
+		<!--1  -->
+		<label class="block-label selectable" for="radio-1">
+			<input class="selectable" id="radio-1" type="checkbox" name="travel-how" value="one">
+			Cartridges designed to explode; noxious ammunition; grenades/bombs/rockets fired from firearms
+		</label>
+		<div class="optional-section-travel-how form-group" data-toggle-value="one">
+			<label class="form-label" for="vac-city">
+				Quantity
+			</label>
+			<input class="form-control" id="vac-city" type="text">
+			<br><br>
+			<details>
+				<summary><span class="summary">Help with section 5(1)(c)</span></summary>
+				<div class="panel panel-border-narrow">
+					<p>covers any cartridge with a bullet designed to explode on or immediately before impact, any ammunition containing or designed or adapted to contain any such noxious thing as is mentioned in section 5(1)(b) and, if capable of being used with a firearm of any description, any grenade, bomb (or other missile), or rocket or shell designed to expode as aforesaid.</p>
+				</div>
+			</details>
+		</div>
+
+		<!--2  -->
+		<label class="block-label selectable" for="radio-2">
+			<input id="radio-2" type="checkbox" name="travel-how" value="two">
+			Ammunition for military use which has an incendiary missile
+		</label>
+		<div class="optional-section-travel-how form-group" data-toggle-value="two">
+
+			<label class="form-label" for="vac-city2">
+				Quantity
+			</label>
+			<input class="form-control" id="vac-city2" type="text">
+			<br><br>
+			<details>
+				<summary><span class="summary">Help with section 5(1A)(d)</span></summary>
+				<div class="panel panel-border-narrow">
+					<p>covers any ammunition for military use which consists in or incorporates a missile designed so that a substance contained in the missile will ignite on or immediately before impact.</p>
+				</div>
+			</details>
+		</div>
+		<!--3  -->
+		<label class="block-label selectable" for="radio-3">
+			<input id="radio-3" type="checkbox" name="travel-how" value="three">
+			Ammunition for military use which has an armour-piercing missile
+		</label>
+		<div class="optional-section-travel-how form-group" data-toggle-value="three">
+			<label class="form-label" for="vac-city3">
+				Quantity
+			</label>
+			<input class="form-control" id="vac-city3" type="text">
+			<br><br>
+			<details>
+				<summary><span class="summary">Help with section 5(1A)(e)</span></summary>
+				<div class="panel panel-border-narrow">
+					<p>covers any ammunition for military use which consists in or incorporates a missile designed, on account of its having a jacket and hard-core to penetrate armour plating, armour screening or body armour.</p>
+				</div>
+			</details>
+		</div>
+		<!--4  -->
+		<label class="block-label selectable" for="radio-4">
+			<input class="selectable" id="radio-4" type="checkbox" name="travel-how" value="four">
 			Ammunition which has an expanding missile
 		</label>
-    <label class="block-label" for="weapon-6">
-      <input id="weapon-6" name="waste-types" type="checkbox" value="waste-mine5">
-      Actual missiles (projectiles) for all the above ammunition
-    </label>
+		<div class="optional-section-travel-how form-group" data-toggle-value="four">
+			<label class="form-label" for="vac-city">
+				Quantity
+			</label>
+			<input class="form-control" id="vac-city" type="text">
+			<br><br>
+			<details>
+				<summary><span class="summary">Help with section 5(1A)(f)</span></summary>
+				<div class="panel panel-border-narrow">
+					<p>covers any ammunition which incorporates a missile designed or adapted to expand on impact.</p>
+				</div>
+			</details>
+		</div>
+		<!--5  -->
+		<label class="block-label selectable" for="radio-5">
+			<input id="radio-5" type="checkbox" name="travel-how" value="five">
+			Actual missiles (projectiles) for all the above ammunition
+		</label>
+		<div class="optional-section-travel-how form-group" data-toggle-value="five">
+
+			<label class="form-label" for="vac-city2">
+				Quantity
+			</label>
+			<input class="form-control" id="vac-city2" type="text">
+			<br><br>
+			<details>
+				<summary><span class="summary">Help with section 5(1A)(g)</span></summary>
+				<div class="panel panel-border-narrow">
+					<p>covers anything which is designed to be projected as a missile from any weapon and is designed to be, or has been, incorporated in:<br>(i) any ammunitin falling within any of the parts of section 5(1A); or <br>(ii) any ammunition which wold fall within section 5(1A) but for its being specified in any part of section 5(1).</p>
+				</div>
+			</details>
+		</div>
 
 
   </fieldset>
 </form>
 
 <br>
-<details>
-	<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="false"><span class="summary">Help with ammunition categories</span></summary>
-	<div class="panel-indent" id="details-content-0" aria-hidden="true" style="display: none;">
-		<p>
-			lorem ipsum
-		</p>
-
-	</div>
-</details>
-
-
-
-
 <br>
 	<div class="form-group">
 		<a class="button" href="applicant.html">Save and continue</a>
