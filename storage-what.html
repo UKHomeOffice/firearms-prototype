@@ -29,63 +29,65 @@
 	<header data-includefile="header"></header>
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
+
 		<!--LAYOUT  -->
 		<div class="column-two-thirds">
 
-			<!-- DELETE FROM HERE -->
-			<form name="test-form" class="form">
-				<br>
-				<a href="applicant-home-select.html">< Back</a>
+<!-- DELETE FROM HERE -->
+<form name="test-form" class="form">
+	<br>
+	<a href="company.html">< Back</a>
 
 
 
-				<!--Firearms certificate -->
+	<!--Weapons-->
 
-				<h1 class="heading-medium">Is there another address where the prohibited weapons and ammunition will be stored?</h1>
+<h1 class="heading-medium">What would be stored?</h1>
+<p>Select all that apply</p>
 
-			<form>
-				<fieldset>
+<form>
+  <fieldset>
 
-			<label class="form-label" for="full-name-f1"><p>The police will inspect each address used for storage</p>
-</label>
-					<label class="block-label" for="radio-1">
-						<input id="radio-1" type="radio" name="radio-group" value="yes">
-						Yes
-					</label>
-					<label class="block-label" for="radio-2">
-						<input id="radio-2" type="radio" name="radio-group" value="no">
-						No
-					</label>
+    <label class="block-label" for="waste-type-1">
+      <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+      Weapons and/or components
+    </label>
+    <label class="block-label" for="waste-type-2">
+      <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
+      Ammunition
+    </label>
 
-				</fieldset>
-			</form>
+  </fieldset>
+</form>
+<br>
+<!-- <details>
+	<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="false"><span class="summary">Help with weapons, components and ammunition</span></summary>
+	<div class="panel-indent" id="details-content-0" aria-hidden="true" style="display: none;">
+		<p>
+			A weapon is
+		</p>
 
-			<br>
-			<a href="#"><input class="button" type="submit" value="Continue"></a>
+		<p>A component is</p>
 
-			</div>
-			<!--  -->
+		<p>Ammunition is </p>
+	</div>
+</details> -->
+<br>
+<a href="company-address.html"><input class="button" type="submit" value="Continue"></a>
+
 </div>
-		<!-- STOP DELETING! -->
+<!--  -->
+
+
+
+
+
+<!-- CLOSING LAYOUT DIV -->
+</div>
+<!-- STOP DELETING! -->
+
 
 	</main>
 	<footer data-includefile="footer"></footer>
-	<script type="text/javascript">
-		$(function () {
-			$('a').click(function (e) {
-				var value = $('input[name=radio-group]:checked').val();
-				// var value = $('input#input-text-id').val();
-				switch(value) {
-					case 'yes':
-						this.href = 'company-address-second.html';
-						break;
-					default:
-						this.href = 'weapons.html';
-						break;
-				}
-				return true;
-			});
-		});
-	</script>
 </body>
 </html>

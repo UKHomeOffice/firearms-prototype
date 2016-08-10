@@ -29,63 +29,47 @@
 	<header data-includefile="header"></header>
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
+
 		<!--LAYOUT  -->
 		<div class="column-two-thirds">
 
 			<!-- DELETE FROM HERE -->
 			<form name="test-form" class="form">
 				<br>
-				<a href="applicant-home-select.html">< Back</a>
+				<a href="why.html">< Back</a>
 
 
 
-				<!--Firearms certificate -->
+				<!--Weapons-->
 
-				<h1 class="heading-medium">Is there another address where the prohibited weapons and ammunition will be stored?</h1>
-
-			<form>
-				<fieldset>
-
-			<label class="form-label" for="full-name-f1"><p>The police will inspect each address used for storage</p>
-</label>
-					<label class="block-label" for="radio-1">
-						<input id="radio-1" type="radio" name="radio-group" value="yes">
-						Yes
+				<h1 class="heading-medium">Upload supporting documents to justify authorisation</h1>
+				<p>Include evidence of existing or prospective trade such as contracts. </p>
+				<br>
+				<!-- <div class="form-group">
+					<label class="form-label" for="full-name">Include executive summary, background, business objectives and evidence of prospective trade that justify the activities selected in previous page
+						<span class="form-hint"></span>
 					</label>
-					<label class="block-label" for="radio-2">
-						<input id="radio-2" type="radio" name="radio-group" value="no">
-						No
-					</label>
+					<textarea name="Text1" cols="40" rows="5" style="width:600px; height:150px;" id="Text1"></textarea>
+				</div> -->
+				<div>
+					<a href="#" class="grey_button">Add supporting documents</a><p class="nofilechosen">No file chosen</p>
+				</div>
 
-				</fieldset>
+				<br>
+				<br>
+
+				<div class="form-group">
+					<a class="button" href="storage-what.html">Continue</a>
+
+				</div>
 			</form>
 
-			<br>
-			<a href="#"><input class="button" type="submit" value="Continue"></a>
-
-			</div>
-			<!--  -->
-</div>
+			<!-- CLOSING LAYOUT DIV -->
+		</div>
 		<!-- STOP DELETING! -->
+
 
 	</main>
 	<footer data-includefile="footer"></footer>
-	<script type="text/javascript">
-		$(function () {
-			$('a').click(function (e) {
-				var value = $('input[name=radio-group]:checked').val();
-				// var value = $('input#input-text-id').val();
-				switch(value) {
-					case 'yes':
-						this.href = 'company-address-second.html';
-						break;
-					default:
-						this.href = 'weapons.html';
-						break;
-				}
-				return true;
-			});
-		});
-	</script>
 </body>
 </html>
