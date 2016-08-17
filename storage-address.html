@@ -29,62 +29,37 @@
 	<header data-includefile="header"></header>
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
+		<!--LAYOUT  -->
+		<div class="column-two-thirds">
+
+<!-- DELETE FROM HERE -->
+
+<form name="test-form" class="form">
+	<br>
+		<a href="business-need-reason.html">< Back</a>
+
+	<h1 class="heading-medium">Where will the prohibited weapons and ammunition be stored?</h1>
+<p>You can add further addresses later if required.</p>
+	<!-- Company address -->
+	<div class="form-group">
+		<label class="form-label" for="full-name">Postcode of first address
+		</label>
+		<input type="text" class="form-control" id="full-name" name="full-name" />
+	</div>
 
 
-			<!-- DELETE FROM HERE -->
-			<form name="test-form" class="form">
-				<br>
-				<a href="applicant-home-select.html">< Back</a>
 
 
+	<div class="form-group">
+		<a class="button" href="storage-address-select.html">Find address</a>
 
-				<!--Firearms certificate -->
+	</div>
+</form>
+</div>
+<!-- STOP DELETING! -->
 
-				<h1 class="heading-medium">How many individuals will be named on the authority?</h1>
-
-			<form>
-				<fieldset>
-
-			<label class="form-label" for="full-name-f1"><p>You can name up to two prospective responsible people</p>
-</label>
-					<label class="block-label" for="radio-1">
-						<input id="radio-1" type="radio" name="radio-group" value="yes">
-						One
-					</label>
-					<label class="block-label" for="radio-2">
-						<input id="radio-2" type="radio" name="radio-group" value="no">
-						Two
-					</label>
-
-				</fieldset>
-			</form>
-
-			<br>
-			<a href="#"><input class="button" type="submit" value="Continue"></a>
-
-			</div>
-			<!--  -->
-
-		<!-- STOP DELETING! -->
 
 	</main>
 	<footer data-includefile="footer"></footer>
-	<script type="text/javascript">
-		$(function () {
-			$('a').click(function (e) {
-				var value = $('input[name=radio-group]:checked').val();
-				// var value = $('input#input-text-id').val();
-				switch(value) {
-					case 'yes':
-						this.href = 'applicant.html';
-						break;
-					default:
-						this.href = 'applicant.html';
-						break;
-				}
-				return true;
-			});
-		});
-	</script>
 </body>
 </html>

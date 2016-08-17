@@ -1752,7 +1752,7 @@ module.exports = function(environment) {
             return fallback(this, filePathNode);
         }
 
-        buf = useBase64 ? environment.encodeBase64(buf) : encodeURIComponent(buf);
+        buf = useBase64 ? environment.encodeBase64(buf) : encodeURIcomponent(buf);
 
         var uri = "data:" + mimetype + ',' + buf + fragment;
 
@@ -2053,7 +2053,7 @@ functionRegistry.addMultiple({
             result = result.replace(/%[sda]/i, function(token) {
                 var value = ((args[i].type === "Quoted") &&
                     token.match(/s/i)) ? args[i].value : args[i].toCSS();
-                return token.match(/[A-Z]$/) ? encodeURIComponent(value) : value;
+                return token.match(/[A-Z]$/) ? encodeURIcomponent(value) : value;
             });
         }
         result = result.replace(/%%/g, '%');
@@ -2144,7 +2144,7 @@ module.exports = function(environment) {
         returner += '</' + gradientType + 'Gradient>' +
             '<rect ' + rectangleDimension + ' fill="url(#gradient)" /></svg>';
 
-        returner = encodeURIComponent(returner);
+        returner = encodeURIcomponent(returner);
 
         returner = "data:image/svg+xml," + returner;
         return new URL(new Quoted("'" + returner + "'", returner, false, this.index, this.currentFileInfo), this.index, this.currentFileInfo);

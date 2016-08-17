@@ -34,21 +34,45 @@
 
 <form name="test-form" class="form">
 	<br>
-	<a href="contact.html">< Back</a>
+	<a href="applicant2.html">< Back</a>
 
-	<h1 class="heading-medium">What is your contact address?</h1>
+	<h1 class="heading-medium">Who do we contact about this application?</h1>
 
-	<!--Home address  -->
+
+
+	<form>
+		<fieldset>
+
+
+
+<label class="block-label" for="radio-5">
+<input id="radio-5" type="radio" name="radio-group" value="first">
+First authority holder
+</label>
+			<label class="block-label" for="radio-1">
+				<input id="radio-1" type="radio" name="radio-group" value="second">
+				Second authority holder
+			</label>
+
+			<label class="block-label" for="radio-2">
+				<input id="radio-2" type="radio" name="radio-group" value="third">
+				Someone else
+			</label>
+
+
+		</fieldset>
+	</form>
+
+
+
+<br>
+
+
+
+
 
 	<div class="form-group">
-		<label class="form-label" for="full-name">Postcode</label>
-		<input type="text" class="form-control" id="full-name" name="full-name" />
-	</div>
-
-
-
-	<div class="form-group">
-		<a class="button" href="contact-select.html">Find address</a>
+		<a class="button" href="contact-name.html">Continue</a>
 
 	</div>
 </form>
@@ -58,5 +82,23 @@
 
 	</main>
 	<footer data-includefile="footer"></footer>
+	<script type="text/javascript">
+		$(function () {
+			$('a').click(function (e) {
+				var value = $('input[name=radio-group]:checked').val();
+				// var value = $('input#input-text-id').val();
+				switch(value) {
+						case 'third':
+							this.href = 'contact-name.html';
+							break;
+
+					default:
+						this.href = 'contact-details.html';
+						break;
+				}
+				return true;
+			});
+		});
+	</script>
 </body>
 </html>
