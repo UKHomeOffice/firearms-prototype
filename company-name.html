@@ -34,13 +34,50 @@
 
 <form name="test-form" class="form">
 	<br>
-	<h1 class="heading-medium">What's the company's name?</h1>
+	<h1 class="heading-medium">Are you a company or sole trader?</h1>
 
 	<!--name of company  -->
 
 	<div class="form-group">
-		<label class="form-label" for="full-name">Company name</label>
-		<input type="text" class="form-control" id="full-name0" name="full-name0" />
+		<!--1  -->
+		<label class="block-label selectable" for="radio-1">
+			<input class="selectable" id="radio-1" type="radio" name="travel-how" value="one">
+			Company
+		</label>
+		<div class="optional-section-travel-how form-group" data-toggle-value="one">
+			<br>
+			<label class="form-label" for="vac-city">
+				Company name
+			</label>
+			<textarea name="Text333a" cols="340" rows="1" style="width:250px; height:30px;" id="Text333a"></textarea>
+			<br><br>
+			<!-- <details>
+				<summary><span class="summary">Help with section 5(1)(a)</span></summary>
+				<div class="panel panel-border-narrow">
+					<p>This includes all weapons which are so designed or adapted that two or more missiles can be successively discharged without repeated pressure on the trigger.</p>
+				</div>
+			</details> -->
+		</div>
+
+		<!--2  -->
+		<label class="block-label selectable" for="radio-2">
+			<input id="radio-2" type="radio" name="travel-how" value="two">
+			Sole trader
+		</label>
+		<div class="optional-section-travel-how form-group" data-toggle-value="two">
+<br>
+			<label class="form-label" for="vac-city2">
+				Sole trader name
+			</label>
+			<textarea name="Text333a" cols="340" rows="1" style="width:250px; height:30px;" id="Text333a"></textarea>
+			<br><br>
+			<!-- <details>
+				<summary><span class="summary">Help with section 5(1)(ab)</span></summary>
+				<div class="panel panel-border-narrow">
+					<p>This includes any self-loading or pump-action rifled gun other than one which is chambered for a .22 rimfire cartridges.</p>
+				</div>
+			</details> -->
+		</div>
 	</div>
 
 
