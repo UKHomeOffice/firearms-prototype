@@ -42,13 +42,34 @@
 
 				<!--Weapons-->
 
-				<h1 class="heading-medium">Which categories do your weapons fall under?</h1>
-				<p>Select all that apply and state the maximum quantities. In only exceptional circumstances, such as transporting weapons under seal, should you leave the maximum quantity questions blank.</p>
+				<h1 class="heading-medium">Which categories do the weapons fall under?</h1>
+				<p>Select all that apply and state the maximum quantities. The quantities should reflect the supporting evidence provided, and  be as accurate as possible.</p>
+				<p> In only exceptional circumstances, such as transporting weapons under seal, should you select the unspecified option or leave the maximum quantity questions blank.</p>
 
 				<!--new  -->
 				<form name="test-form">
+
 					<div class="form-group">
+						<!--12 -->
+						<label class="block-label selectable" for="radio-12">
+							<input id="radio-12" type="checkbox" name="travel-how" value="twelve">
+							Unspecified sections and quantities
+						</label>
+						<div class="optional-section-travel-how form-group" data-toggle-value="twelve">
+							<label class="form-label" for="vac-city3">
+								Please provide further details explaining why you can't specify the section and quantities  of weapons being handled.
+							</label>
+							<!-- <input class="form-control" id="vac-city2" type="text"> -->
+							<textarea name="Text333a" cols="340" rows="5" style="width:600px; height:150px;" id="Text333a"></textarea>
+							<br><br>
+								</div>
+
+
 						<!--1  -->
+						<br><br><br>
+						<div>
+									<p>or</p>
+								</div>
 						<label class="block-label selectable" for="radio-1">
 							<input class="selectable" id="radio-1" type="checkbox" name="travel-how" value="one">
 							Fully automatic or burst-fire weapons - Section 5(1)(a)
@@ -258,25 +279,14 @@
 								</div>
 							</details>
 						</div>
-						<!--12 -->
-						<label class="block-label selectable" for="radio-12">
-							<input id="radio-12" type="checkbox" name="travel-how" value="twelve">
-							Unspecified sections and quantities
-						</label>
-						<div class="optional-section-travel-how form-group" data-toggle-value="twelve">
-							<label class="form-label" for="vac-city3">
-								Please provide further details explaining why you can't specify the section and quantities  of weapons the company will be handling.
-							</label>
-							<!-- <input class="form-control" id="vac-city2" type="text"> -->
-							<textarea name="Text333a" cols="340" rows="5" style="width:600px; height:150px;" id="Text333a"></textarea>
-							<br><br>
+
 							<!-- <details>
 								<summary><span class="summary">Help with section 5(1A)(c)</span></summary>
 								<div class="panel panel-border-narrow">
 									<p>This includes any launcher or other projecting apparatus that's not included in section 5(1)(ae) and is designed to be used with a 5(1A)(b) rocket or ammunition, or with section 5(1)(c) ammunition.</p>
 								</div>
 							</details> -->
-						</div>
+
 					</div>
 				</form>
 				<!-- end new -->

@@ -46,7 +46,7 @@
 			<!--1  -->
 			<label class="block-label selectable" for="radio-1">
 				<input class="selectable" id="radio-1" type="radio" name="travel-how" value="one">
-				First authority holder
+				(First authority holder's name)
 			</label>
 
 
@@ -55,9 +55,9 @@
 			</div>
 			<!--  -->
 			<!--2  -->
-			<label class="block-label selectable" for="radio-3">
-				<input id="radio-3" type="radio" name="travel-how4" value="three">
-				Second authority holder
+			<label class="block-label selectable" for="radio-2">
+				<input class="selectable" id="radio-2" type="radio" name="travel-how" value="two">
+				(Second authority holder's name)
 			</label>
 
 
@@ -68,11 +68,16 @@
 
 
 			<!--3  -->
-			<label class="block-label selectable" for="radio-2">
-				<input id="radio-2" type="radio" name="travel-how" value="two">
+			<label class="block-label selectable" for="radio-3">
+				<input class="selectable" id="radio-3" type="radio" name="travel-how" value="three3">
 				Someone else
 			</label>
-
+			<div class="optional-section-travel-how form-group" data-toggle-value="three3">
+	<br>
+				<label class="form-label" for="vac-city2">
+					Full name
+				</label>
+				<textarea name="Text333a" cols="340" rows="1" style="width:250px; height:30px;" id="Text333a"></textarea>
 				<br><br>
 
 
@@ -89,7 +94,7 @@
 
 
 	<div class="form-group">
-		<a class="button" href="contact-name.html">Continue</a>
+		<a class="button" href="contact-details.html">Continue</a>
 
 	</div>
 </form>
@@ -99,5 +104,23 @@
 
 	</main>
 	<footer data-includefile="footer"></footer>
+	<script type="text/javascript">
+		$(function () {
+			$('a').click(function (e) {
+				var value = $('input[name=radio-group]:checked').val();
+				// var value = $('input#input-text-id').val();
+				switch(value) {
+					case 'three3':
+						this.href = 'contact-details-someone-else.html';
+						break;
+
+					default:
+						this.href = 'contact-details.html';
+						break;
+				}
+				return true;
+			});
+		});
+	</script>
 </body>
 </html>

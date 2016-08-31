@@ -34,25 +34,62 @@
 
 <form name="test-form" class="form">
 	<br>
-	<a href="applicant-pob.html">< Back</a>
-	<h1 class="heading-medium">What's (first authority holder's name) nationality?</h1>
-
-
-	<!--Nationality  -->
+	<a href="applicant.html">< Back</a>
+<h1 class="heading-medium">What's (first authority holder's name) birth details?</h1>
+	<!-- Date of birth -->
 
 	<div class="form-group">
-		<label class="form-label" for="full-name">Nationality</label>
-		<input type="text" class="form-control" id="full-name6" name="full-name6" />
+		<fieldset>
+			<legend class="form-label"></legend>
+
+			<div class="form-date">
+				<p class="form-hint">For example, 31 3 1980</p>
+
+				<div class="form-group form-group-day">
+					<label for="dob-day">Day</label> <input class="form-control" id="dob-day"
+					type="number" pattern="[0-9]*" min="0" max="31" name="dob-day" />
+				</div>
+
+				<div class="form-group form-group-month">
+					<label for="dob-month">Month</label> <input class="form-control" id=
+					"dob-month" type="number" pattern="[0-9]*" min="0" max="12" name="dob-month" />
+				</div>
+
+				<div class="form-group form-group-year">
+					<label for="dob-year">Year</label> <input class="form-control" id="dob-year"
+					type="number" pattern="[0-9]*" min="0" max="2014" name="dob-year" />
+				</div>
+			</div>
+		</fieldset>
 	</div>
 
-	<a href="#">Add another nationality</a>
-<br><br>
+
+
+
+	<!--Place of birth  -->
+
+	<div class="form-group">
+		<label class="form-label" for="full-name">Town/city of birth
+
+		</label>
+		<input type="text" class="form-control" id="full-name5" name="full-name5" />
+
+		<br><br>
+
+		<label class="form-label" for="full-name">Country of birth
+
+		</label>
+		<input type="text" class="form-control" id="full-name6a" name="full-name6a" />
+
+	</div>
+
+
 
 
 
 
 	<div class="form-group">
-		<a class="button" href="authority-holder-home-address.html">Continue</a>
+		<a class="button" href="authority-holder-nationality.html">Continue</a>
 
 	</div>
 </form>
