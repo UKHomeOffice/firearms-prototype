@@ -39,52 +39,42 @@
 	<h1 class="heading-medium">Who do we contact about this application?</h1>
 
 
-
-	<form>
-	  <fieldset>
-			<!--  -->
-			<!--1  -->
-			<label class="block-label selectable" for="radio-1">
-				<input class="selectable" id="radio-1" type="radio" name="travel-how" value="one">
-				(First authority holder's name)
-			</label>
-
-
-				<br><br>
-
-			</div>
-			<!--  -->
-			<!--2  -->
-			<label class="block-label selectable" for="radio-2">
-				<input class="selectable" id="radio-2" type="radio" name="travel-how" value="two">
-				(Second authority holder's name)
-			</label>
-
-
-				<br><br>
-
-			</div>
+<!--  -->
+<form>
+	<fieldset>
 
 
 
-			<!--3  -->
-			<label class="block-label selectable" for="radio-3">
-				<input class="selectable" id="radio-3" type="radio" name="travel-how" value="three3">
-				Someone else
-			</label>
-			<div class="optional-section-travel-how form-group" data-toggle-value="three3">
-	<br>
-				<label class="form-label" for="vac-city2">
-					Full name
-				</label>
-				<textarea name="Text333a" cols="340" rows="1" style="width:250px; height:30px;" id="Text333a"></textarea>
-				<br><br>
+<label class="block-label" for="radio-5">
+<input id="radio-5" type="radio" name="radio-group" value="first-authority">
+[First authority holder's name]
+</label>
+		<label class="block-label" for="radio-1">
+			<input id="radio-1" type="radio" name="radio-group" value="second-authority">
+			[Second authority holder's name]
+		</label>
+
+<!--  -->
+<label class="block-label" for="radio-3">
+	<input id="radio-3" type="radio" name="radio-group" value="someone-else">
+	Someone else
+</label>
+<div class="optional-section-radio-group form-group" data-toggle-value="someone-else">
+<br>
+	<label class="form-label" for="vac-city2">
+		Full name
+	</label>
+	<textarea name="Text333a" cols="340" rows="1" style="width:250px; height:30px;" id="Text333a"></textarea>
+	<br><br>
 
 
 
-			</div>
-		</fieldset>
-	</form>
+</div>
+
+	</fieldset>
+</form>
+<!--  -->
+
 
 
 <br>
@@ -110,12 +100,12 @@
 				var value = $('input[name=radio-group]:checked').val();
 				// var value = $('input#input-text-id').val();
 				switch(value) {
-					case 'three3':
+					case 'someone-else':
 						this.href = 'contact-details-someone-else.html';
 						break;
 
 					default:
-						this.href = 'contact-details.html';
+						this.href = 'contact-details-authority-holder.html';
 						break;
 				}
 				return true;
