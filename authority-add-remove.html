@@ -1,0 +1,137 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="author" content="Tom Harrop" />
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/form.storage.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
+	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+		<!--LAYOUT  -->
+		<div class="column-two-thirds">
+
+			<!-- DELETE FROM HERE -->
+			<form name="test-form" class="form">
+				<br>
+				<a href="business-need-weapons.html">< Back</a>
+
+
+
+				<!--Weapons-->
+
+				<h1 class="heading-medium">What do you want to do?</h1>
+				<p>You can add and remove further authority holders later if required.</p>
+
+				<!--new  -->
+				<form name="test-form">
+
+					<div class="form-group">
+
+
+						<!--1  -->
+
+						<label class="block-label selectable" for="radio-1">
+							<input id="radio-1" type="radio" name="radio-group" value="one">
+							Add new authority holder
+						</label>
+						<div class="optional-section-radio-group form-group" data-toggle-value="one">
+							<br>
+							<label class="form-label" for="vac-city">
+								Full name
+							</label>
+							<input type="text" class="form-control" id="full-name3" name="full-name3" />
+							<br>
+							<!--help text  -->
+							<br>
+							<details>
+								<summary><span class="summary">Adding additional authority holders</span></summary>
+								<div class="panel panel-border-narrow">
+									<p>Remember, if you already have up to two authority holders listed on the current authority, you must remove at least one before adding another.</p>
+									</div>
+								</details>
+
+						</div>
+
+						<!--2  -->
+						<label class="block-label selectable" for="radio-2">
+							<input id="radio-2" type="radio" name="radio-group" value="two">
+							Remove existing authority holder
+						</label>
+						<div class="optional-section-radio-group form-group" data-toggle-value="two">
+<br>
+							<label class="form-label" for="vac-city2">
+								Full name
+							</label>
+							<input type="text" class="form-control" id="full-name3" name="full-name3" />
+							<br>
+
+						</div>
+
+
+					</div>
+				</form>
+				<!-- end new -->
+
+
+				<br>
+
+				<br>
+
+
+
+				<div class="form-group">
+					<a class="button" href="ammunition.html">Continue</a>
+
+				</div>
+			</form>
+
+			<!-- CLOSING LAYOUT DIV -->
+		</div>
+		<!-- STOP DELETING! -->
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+	<script type="text/javascript">
+	$(function () {
+		$('a').click(function (e) {
+			var value = $('input[name=radio-group]:checked').val();
+			// var value = $('input#input-text-id').val();
+			switch(value) {
+				case 'one':
+				this.href = 'authority-holder-birth-add.html';
+				break;
+
+				default:
+				this.href = 'authority-add-remove-next.html';
+				break;
+			}
+			return true;
+		});
+	});
+	</script>
+</body>
+</html>
